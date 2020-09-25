@@ -19,7 +19,9 @@ This plugin simply removes this middle step - if your search returns one result,
 
 The code passes WordPress and WordPress VIP coding standards. Because you're worth it.
 
-Please visit the [Github page](https://github.com/dartiss/solo-search "Github") for the latest code development, planned enhancements and known issues.
+Thanks to my co-worker [Kailey](https://profiles.wordpress.org/trepmal/) for [the original code](https://trepmal.com/2011/04/22/redirect-when-search-query-only-returns-one-match/), which I've been happily using on my own site for many years. I thought it was time to share the ♥️.
+
+Please visit the [Github page](https://github.com/dartiss/solo "Github") for the latest code development, planned enhancements and known issues.
 
 == Installation ==
 
