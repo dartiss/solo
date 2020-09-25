@@ -4,4 +4,4 @@ You know when you search for something on your site and it finds just one result
 
 This plugin simply removes this middle step - if your search returns one result, it will be shown in all its post/page/whatever (delete as appropriate) glory. As well as a quicker answer for your user, removing this improves your site's sustainability (okay, just a little... but every little helps, right?).
 
-<p align="right"><a href="https://wordpress.org/plugins/no-self-ping/"><img src="https://img.shields.io/wordpress/plugin/dt/solo?label=wp.org%20downloads&style=for-the-badge">&nbsp;<img src="https://img.shields.io/wordpress/plugin/stars/solo?color=orange&style=for-the-badge"></a></p>
+<p align="right"><a href="https://wordpress.org/plugins/solo-search/"><img src="https://img.shields.io/wordpress/plugin/dt/solo-search?label=wp.org%20downloads&style=for-the-badge">&nbsp;<img src="https://img.shields.io/wordpress/plugin/stars/solo-search?color=orange&style=for-the-badge"></a></p>
