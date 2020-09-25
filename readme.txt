@@ -1,11 +1,11 @@
 === Solo ===
 Contributors: dartiss
 Donate link: https://artiss.blog/donate
-Tags: search
+Tags: result, search, single, solo
 Requires at least: 2.8
 Tested up to: 5.5
 Requires PHP: 5.3
-Stable tag: 0.1
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,9 +13,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-You know when you search for something on your site and it finds just one result? You then have to click into it to display it. That's annoying. It's also adding an extra page load which is not necessary.
+You know when you search for something on a site and it finds just one result? You then have to click into it to display it. That's annoying. It's also adding an extra page load which is not necessary.
 
-This plugin simply removes this middle step - if your search returns one result, it will be shown in all its post/page/whatever (delete as appropriate) glory. As well as a quicker answer for your user, removing this improves your site's sustainability (okay, just a little... but every little helps, right?).
+This plugin simply removes this middle step - if your search returns one result, it will be shown in all its post/page/whatever (delete as appropriate) glory. As well as a quicker answer for your visitor, removing this improves your site's sustainability (okay, just a little... but every little helps, right?).
 
 The code passes WordPress and WordPress VIP coding standards. Because you're worth it.
 
@@ -34,10 +34,13 @@ It's now ready to go.
 
 [Learn more about my version numbering methodology](https://artiss.blog/2016/09/wordpress-plugin-versioning/ "WordPress Plugin Versioning")
 
+= 0.2 =
+* Bug: Fixed text domain
+
 = 0.1 =
 * Initial release
 
 == Upgrade Notice ==
 
-= 0.1 =
-* Initial release
+= 0.2 =
+* Fixed the incorrect text domain
