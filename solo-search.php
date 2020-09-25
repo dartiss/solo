@@ -3,10 +3,10 @@
 Plugin Name: Solo
 Plugin URI: https://wordpress.org/plugins/solo-search/
 Description: 🔍 Instantly display a single search result
-Version: 0.1
+Version: 0.2
 Author: David Artiss
 Author URI: https://artiss.blog
-Text Domain: solo
+Text Domain: solo-search
 
 @package solo
  */
@@ -24,13 +24,13 @@ function solo_plugin_meta( $links, $file ) {
 
 	if ( false !== strpos( $file, 'solo-search.php' ) ) {
 
-		$links = array_merge( $links, array( '<a href="https://github.com/dartiss/solo">' . __( 'Github', 'solo' ) . '</a>' ) );
+		$links = array_merge( $links, array( '<a href="https://github.com/dartiss/solo">' . __( 'Github', 'solo-search' ) . '</a>' ) );
 
-		$links = array_merge( $links, array( '<a href="https://wordpress.org/support/plugin/solo-search">' . __( 'Support', 'solo' ) . '</a>' ) );
+		$links = array_merge( $links, array( '<a href="https://wordpress.org/support/plugin/solo-search">' . __( 'Support', 'solo-search' ) . '</a>' ) );
 
-		$links = array_merge( $links, array( '<a href="https://artiss.blog/donate">' . __( 'Donate', 'solo' ) . '</a>' ) );
+		$links = array_merge( $links, array( '<a href="https://artiss.blog/donate">' . __( 'Donate', 'solo-search' ) . '</a>' ) );
 
-		$links = array_merge( $links, array( '<a href="https://wordpress.org/support/plugin/solo-search/reviews/#new-post">' . __( 'Write a Review', 'solo' ) . '&nbsp;⭐️⭐️⭐️⭐️⭐️</a>' ) );
+		$links = array_merge( $links, array( '<a href="https://wordpress.org/support/plugin/solo-search/reviews/#new-post">' . __( 'Write a Review', 'solo-search' ) . '&nbsp;⭐️⭐️⭐️⭐️⭐️</a>' ) );
 	}
 
 	return $links;
