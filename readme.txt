@@ -5,7 +5,7 @@ Tags: result, search, single, solo
 Requires at least: 4.6
 Tested up to: 5.6
 Requires PHP: 5.3
-Stable tag: 1.2
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,15 +48,15 @@ Not at the moment, but if this interests you, please let me know!
 
 == Changelog ==
 
-I use semantic versioning, with the first release being 1.0.
+I use semantic versioning, with the first release being 0.1.
 
-= 1.1 =
+= 0.2 =
 * Bug: Fixed text domain
 
-= 1.0 =
+= 0.1 =
 * Initial release
 
 == Upgrade Notice ==
 
-= 1.1 =
+= 0.2 =
 * Fixed the incorrect text domain
