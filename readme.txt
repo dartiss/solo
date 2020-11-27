@@ -2,10 +2,10 @@
 Contributors: dartiss
 Donate link: https://artiss.blog/donate
 Tags: result, search, single, solo
-Requires at least: 2.8
-Tested up to: 5.5
+Requires at least: 4.6
+Tested up to: 5.6
 Requires PHP: 5.3
-Stable tag: 0.2
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,11 +17,15 @@ You know when you search for something on a site and it finds just one result? Y
 
 This plugin simply removes this middle step - if your search returns one result, it will be shown in all its post/page/whatever (delete as appropriate) glory. As well as a quicker answer for your visitor, removing this improves your site's sustainability (okay, just a little... but every little helps, right?).
 
+Not only that, but with a flick of a switch, you can also get it to go straight to any results where the search text matches a post or page title. Cool, eh?
+
 The code passes WordPress and WordPress VIP coding standards. Because you're worth it.
 
 Thanks to my co-worker [Kailey](https://profiles.wordpress.org/trepmal/) for [the original code](https://trepmal.com/2011/04/22/redirect-when-search-query-only-returns-one-match/), which I've been happily using on my own site for many years. I thought it was time to share the ♥️.
 
-Please visit the [Github page](https://github.com/dartiss/solo "Github") for the latest code development, planned enhancements and known issues.
+Iconography is courtesy of the very talented [Janki Rathod](https://www.fiverr.com/jankirathore) ♥️
+
+👉 Please visit the [Github page](https://github.com/dartiss/solo "Github") for the latest code development, planned enhancements and known issues 👈
 
 == Installation ==
 
@@ -32,17 +36,27 @@ Solo can be found and installed via the Plugin menu within WordPress administrat
 
 It's now ready to go.
 
+== Frequently Asked Questions ==
+
+= Why do you have to switch on the "exact match" option? =
+
+Because, if you're using pretty generic titles (e.g. "Twitter") then you may not want this behavior.
+
+= For the "exact match" feature, it only works for posts and pages. Can I add additional taxonomies? =
+
+Not at the moment, but if this interests you, please let me know!
+
 == Changelog ==
 
-[Learn more about my version numbering methodology](https://artiss.blog/2016/09/wordpress-plugin-versioning/ "WordPress Plugin Versioning")
+I use semantic versioning, with the first release being 1.0.
 
-= 0.2 =
+= 1.1 =
 * Bug: Fixed text domain
 
-= 0.1 =
+= 1.0 =
 * Initial release
 
 == Upgrade Notice ==
 
-= 0.2 =
+= 1.1 =
 * Fixed the incorrect text domain
