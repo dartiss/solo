@@ -3,9 +3,9 @@ Contributors: dartiss
 Donate link: https://artiss.blog/donate
 Tags: result, search, single, solo, title
 Requires at least: 4.6
-Tested up to: 6.3
+Tested up to: 6.4
 Requires PHP: 7.4
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,6 +60,9 @@ But, seriously, not at the moment. But if this interests you, please let me know
 
 I use semantic versioning, with the first release being 0.1.
 
+= 1.0.1 =
+* Enhancement: Improved code quality
+
 = 1.0 =
 * Enhancement: You didn't ask for it, but you got it anyway - the search will now display content if you search for an exact match on the title
 * Enhancement: Settings now allow you to turn each of the options on and off, to your likely. You can switch them all of, if you want, although that's a waste of an active plugin, if we're being honest
@@ -74,5 +77,5 @@ I use semantic versioning, with the first release being 0.1.
 
 == Upgrade Notice ==
 
-= 1.0 =
-* 100% more features. 100% more settings. 0% bugs (I can hope, right?)
+= 1.0.1 =
+* Improved code quality
