@@ -1,6 +1,6 @@
 # Solo
 
-<img src="https://ps.w.org/solo-search/assets/icon-128x128.png" align="left">You know when you search for something on a site and it finds just one result? You then have to click into it to display it. That's annoying. It's also adding an extra page load which is not necessary.
+<img src="https://ps.w.org/solo-search/assets/icon.svg" width=128px align="left" style="padding: 0 20px 20px 0;">You know when you search for something on a site and it finds just one result? You then have to click into it to display it. That's annoying. It's also adding an extra page load which is not necessary.
 
 And what about if you search for an exact match for a title and, well, it serves it up along with a number of other possible results. Hey, why didn't you just show me the one that I typed the name of in exactly? Well, you can do that too. Cool, eh?
 

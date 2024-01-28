@@ -9,9 +9,9 @@
  * Plugin Name:       Solo
  * Plugin URI:        https://wordpress.org/plugins/solo-search/
  * Description:       🔍 Instantly display a single search result
- * Version:           1.0
+ * Version:           1.0.1
  * Requires at least: 4.6
- * Requires PHP:      5.3
+ * Requires PHP:      7.4
  * Author:            David Artiss
  * Author URI:        https://artiss.blog
  * Text Domain:       solo-search
@@ -96,30 +96,30 @@ function solo_remove_single_results() {
 		// If an exact match for a post or page title is found, go straight to that.
 		if ( function_exists( 'wpcom_vip_get_page_by_title' ) ) {
 
-			if ( wpcom_vip_get_page_by_title( get_search_query(), 'OBJECT', 'post' ) && 1 == $posts ) {
+			if ( wpcom_vip_get_page_by_title( get_search_query(), 'OBJECT', 'post' ) && 1 === $posts ) {
 				wp_safe_redirect( get_permalink( wpcom_vip_get_page_by_title( get_search_query() )->ID ) );
 				exit;
 			}
 
-			if ( wpcom_vip_get_page_by_title( get_search_query(), 'OBJECT', 'page' ) && 1 == $pages ) {
+			if ( wpcom_vip_get_page_by_title( get_search_query(), 'OBJECT', 'page' ) && 1 === $pages ) {
 				wp_safe_redirect( get_permalink( wpcom_vip_get_page_by_title( get_search_query() )->ID ) );
 				exit;
 			}
 		} else {
 
-			if ( get_page_by_title( get_search_query(), 'OBJECT', 'post' ) && 1 == $posts ) { // @codingStandardsIgnoreLine -- for non-VIP environments
+			if ( get_page_by_title( get_search_query(), 'OBJECT', 'post' ) && 1 === $posts ) { // @codingStandardsIgnoreLine -- for non-VIP environments
 				wp_safe_redirect( get_permalink( get_page_by_title( get_search_query() )->ID ) ); // @codingStandardsIgnoreLine -- for non-VIP environments
 				exit;
 			}
 
-			if ( get_page_by_title( get_search_query(), 'OBJECT', 'page' ) && 1 == $pages ) { // @codingStandardsIgnoreLine -- for non-VIP environments
+			if ( get_page_by_title( get_search_query(), 'OBJECT', 'page' ) && 1 === $pages ) { // @codingStandardsIgnoreLine -- for non-VIP environments
 				wp_safe_redirect( get_permalink( get_page_by_title( get_search_query() )->ID ) ); // @codingStandardsIgnoreLine -- for non-VIP environments
 				exit;
 			}
 		}
 
 		// If only one result is found, redirect straight to it!
-		if ( 1 == $single && 1 == $wp_query->post_count && 1 == $wp_query->max_num_pages ) {
+		if ( 1 === $single && 1 === $wp_query->post_count && 1 === $wp_query->max_num_pages ) {
 			wp_safe_redirect( get_permalink( $wp_query->posts[0]->ID ) );
 			exit;
 		}
@@ -160,7 +160,6 @@ add_action( 'admin_init', 'solo_settings_init' );
 function solo_section_callback() {
 
 	echo esc_attr( __( 'Define how you want search results to be handled, when exact matches and single results are found.', 'solo-search' ) );
-
 }
 
 /**
@@ -170,8 +169,7 @@ function solo_section_callback() {
  */
 function solo_setting_single_callback() {
 
-	echo '<label><input name="solo_option_single" type="checkbox" value="1" ' . checked( 1, get_option( 'solo_option_single', 1 ), false ) . '/>&nbsp;&nbsp;If a single result is found, redirect to that result</label>';
-
+	echo '<label><input name="solo_option_single" type="checkbox" value="1" ' . checked( 1, get_option( 'solo_option_single', 1 ), false ) . '>&nbsp;&nbsp;If a single result is found, redirect to that result</label>';
 }
 
 /**
@@ -181,8 +179,7 @@ function solo_setting_single_callback() {
  */
 function solo_setting_exact_posts_callback() {
 
-	echo '<label><input name="solo_option_exact_posts" type="checkbox" value="1" ' . checked( 1, get_option( 'solo_option_exact_posts', '' ), false ) . '/>&nbsp;&nbsp;Posts</label>';
-
+	echo '<label><input name="solo_option_exact_posts" type="checkbox" value="1" ' . checked( 1, get_option( 'solo_option_exact_posts', '' ), false ) . '>&nbsp;&nbsp;Posts</label>';
 }
 
 /**
@@ -192,6 +189,5 @@ function solo_setting_exact_posts_callback() {
  */
 function solo_setting_exact_pages_callback() {
 
-	echo '<label><input name="solo_option_exact_pages" type="checkbox" value="1" ' . checked( 1, get_option( 'solo_option_exact_pages', '' ), false ) . '/>&nbsp;&nbsp;Pages</label></br></br><p class="description">If an exact match to a title is found, redirect to it.</p>';
-	
+	echo '<label><input name="solo_option_exact_pages" type="checkbox" value="1" ' . checked( 1, get_option( 'solo_option_exact_pages', '' ), false ) . '>&nbsp;&nbsp;Pages</label><br><br><p class="description">If an exact match to a title is found, redirect to it.</p>';
 }
