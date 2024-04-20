@@ -3,13 +3,13 @@ Contributors: dartiss
 Donate link: https://artiss.blog/donate
 Tags: result, search, single, solo, title
 Requires at least: 4.6
-Tested up to: 6.4
+Tested up to: 6.5
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-🔍 Instantly display a single search result.
+Instantly display a single search result.
 
 == Description ==
 
@@ -25,7 +25,7 @@ Thanks to my co-worker [Kailey](https://profiles.wordpress.org/trepmal/) for [th
 
 Iconography is courtesy of the very talented [Janki Rathod](https://www.fiverr.com/jankirathore).
 
-👉 Please visit the [Github page](https://github.com/dartiss/solo "Github") for the latest code development, planned enhancements and known issues 👈
+**Please visit the [Github page](https://github.com/dartiss/solo "Github") for the latest code development, planned enhancements and known issues**
 
 == Installation ==
 
@@ -60,6 +60,11 @@ But, seriously, not at the moment. But if this interests you, please let me know
 
 I use semantic versioning, with the first release being 0.1.
 
+= 1.1 =
+* Enhancement: The code was getting quite big so I've split it into a number of files, with a control file bringing them all together. It's a big change, so required a bigger jump in revision, despite there being no visible changes.
+* Enhancement: Also added some spit and polish across the code and README more generally
+* Enhancement: Added an uninstaller file to get rid of any cruft when you remove the plugin (not that you'd ever do that of course!)
+
 = 1.0.1 =
 * Enhancement: Improved code quality
 
@@ -77,5 +82,5 @@ I use semantic versioning, with the first release being 0.1.
 
 == Upgrade Notice ==
 
-= 1.0.1 =
-* Improved code quality
+= 1.1 =
+* No new features but a big shake-up of the code layout
