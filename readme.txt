@@ -3,7 +3,7 @@ Contributors: dartiss
 Donate link: https://artiss.blog/donate
 Tags: result, search, single, solo, title
 Requires at least: 4.6
-Tested up to: 6.5
+Tested up to: 7.1
 Requires PHP: 7.4
 Stable tag: 1.1
 License: GPLv2 or later
@@ -51,6 +51,10 @@ On my own site (artiss.blog - always a good read. Never dull. Please subscribe),
 What kind of monster are you?
 
 But, seriously, not at the moment. But if this interests you, please let me know!
+
+= Do you support this plugin on forks of WordPress? =
+
+No. It was developed for WordPress and so forks remain unsupported. I have no intention of developing and testing this on any other version.
 
 == Screenshots ==
 
